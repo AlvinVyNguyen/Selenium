@@ -1,11 +1,13 @@
 package test;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class day1 {
+public class day1 extends TestBase{
 
 
 		// TODO Auto-generated method stub
@@ -19,7 +21,7 @@ public class day1 {
 	public void Demo()
 	{
 		System.out.println("hello");//automation
-		Assert.assertTrue(false);
+		//Assert.assertTrue(false);
 	}
 	@AfterSuite
 	
@@ -32,7 +34,11 @@ public class day1 {
 	{
 		System.out.println("bye");
 	}
-
+	@Test
+	public void OpeningBrowser() throws IOException
+	{
+		Login();
+	}
 
 
 }

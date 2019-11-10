@@ -11,5 +11,7 @@
 	<classpathentry kind="lib" path="F:/Eclipse/Selenium.Jars/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Selenium.Jars/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse/Selenium.Jars/jcommander-1.7.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Selenium.Jars/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse/Selenium.Jars/testng-6.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
