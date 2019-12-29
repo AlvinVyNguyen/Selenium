@@ -3,12 +3,12 @@ package selectAccountPackage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SelectAccount {
+public class selectAccount {
 	
 	By iframe = By.tagName("iframe");
 	
 	WebDriver driver;
-	public SelectAccount(WebDriver driver)
+	public selectAccount(WebDriver driver)
 	{
 		this.driver = driver;
 	}

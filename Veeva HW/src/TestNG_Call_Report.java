@@ -6,7 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import loginPagePackage.LoginPage;
-import selectAccountPackage.SelectAccount;
+import massAddPromoItemsPackage.massAddPromoItems;
+import selectAccountPackage.selectAccount;
 import selectOptionPackage.SelectOption;
 
 public class TestNG_Call_Report {
@@ -16,7 +17,7 @@ public class TestNG_Call_Report {
 	{
 		System.setProperty("webdriver.chrome.driver", "F:\\Eclipse\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://login.salesforce.com/");
 		
@@ -25,15 +26,19 @@ public class TestNG_Call_Report {
 		login.loginToSalesForce("bb67@bb2.com", "bugb1234");
 		
 		
-		SelectAccount account = new SelectAccount(driver);
+		selectAccount account = new selectAccount(driver);
 		account.selectMyAccount("Adams, Bob");
 		
 		
 		SelectOption option = new SelectOption(driver);
-		option.selectAccountOption("Record A Call");
+		option.selectAccountOption("Record a Call");
 		
 		/* Verifies if a Call Report Page is displayed */
 		driver.findElement(By.xpath("//h2[contains(text(), 'New Call Report')]")).isDisplayed();
+		
+		massAddPromoItems items = new massAddPromoItems(driver);
+		String[] itemsList = {"Cholecap", "Labrinone"};
+		items.addItems(itemsList);
 		
 	}
 
