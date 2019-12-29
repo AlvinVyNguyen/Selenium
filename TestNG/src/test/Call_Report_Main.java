@@ -1,3 +1,4 @@
+package test;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -68,8 +69,6 @@ public class Call_Report_Main {
 				throw new java.lang.RuntimeException("The product selected did not match the order it was selected in");
 			}
 		}
-		
-		
 		
 	    WebElement qnaslCoPay = driver.findElement(By.id("chka00U0000006DqzyIAC"));
 	    qnaslCoPay.click();
