@@ -18,7 +18,7 @@ public class Scope {
 		//any link on a page will have the tag "a"
 		System.out.println(driver.findElements(By.tagName("a")).size());
 		//2. Give count of links on footer section
-		//below is how to specify specific areas you watn to count, in  this case the footer
+		//below is how to specify specific areas you want to count, in  this case the footer
 		WebElement footerdriver = driver.findElement(By.id("gf-BIG")); //limits webdriver scope
 		System.out.println(footerdriver.findElements(By.tagName("a")).size());
 		//3. Give count of links on the first column of footer section
